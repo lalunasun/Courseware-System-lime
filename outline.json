@@ -1,0 +1,431 @@
+{
+    "A6":{
+        "L1":{
+            "Beam":{
+            },
+            "Properller":{
+            },
+            "Gear Box":{
+            },
+            "Turntable":{
+            },
+            "Scissor Mechanism":{
+            },
+            "Rubber Band":{
+            },
+            "Crown Gear":{
+            },
+            "Simple Gear Chain":{
+            }
+        },
+        "L2":{
+            "Linked Motion":{
+            },
+            "Rubber Band":{
+            },
+            "Dual Direction + Motion Sensor":{
+            },
+            "Worm Gear":{
+            },
+            "Pulley+String":{
+            },
+            "Gear Rack":{
+            },
+            "Conveyor Belt":{
+            },
+            "Gear Composites":{
+            }
+        },
+        "L3":{
+            "Refining the Structure":{
+            },
+            "Gear Box":{
+            },
+            "Parallel Gear":{
+            },
+            "Linear Gear":{
+            },
+            "Gear Rack":{
+            },
+            "Fixing disconnection with Rubber Band":{
+            },
+            "Complex Gear":{
+            },
+            "Applied Mechanism":{
+            }
+        }
+    },
+    "A7":{
+        "L1":{
+            "Spike New M1":{
+            },
+            "M2":{
+            },
+            "M3":{
+            },
+            "M4":{
+            },
+            "M5":{
+            },
+            "M6":{
+            },
+            "M7":{
+            },
+            "M8":{
+            }
+        },
+        "L2":{
+            "M1":{
+            },
+            "M2":{
+            },
+            "M3":{
+            },
+            "M4":{
+            },
+            "M5":{
+            },
+            "M6":{
+            },
+            "M7":{
+            },
+            "M8":{
+            }
+        },
+        "L3":{
+            "M1":{
+            },
+            "M2":{
+            },
+            "M3":{
+            },
+            "M4":{
+            },
+            "M5":{
+            },
+            "M6":{
+            }
+        },
+        "L4":{
+
+        }
+
+    },
+    "A8":{
+        "L1":{
+            "Education Kit Builds (2nd generation)":{
+            },
+            "Competition Kit Builds (2nd generation)":{
+            },
+            "Super Kit Builds (1st generation)":{
+            },
+            "Additional IQ Builds":{
+            }
+        },
+        "L2":{},
+        "L3":{}
+    },
+    "A9":{
+        "L1":{},
+        "L2":{}
+    },
+    
+    "A10":{
+            "L1": {
+                "Simple Machinery ":{},
+                "Bee Kingdom":{},
+                "Detective Academy":{},
+                "Dinosaur":{},
+                "Friction":{},
+                "Garment Factory":{},
+                "Bones":{},
+                "Secret of Colours":{},
+                "Time & Chinese Zodiac":{}
+            },
+            "L2":{
+
+            },
+            "L3":{
+
+            }
+           
+    },
+    "A5" : {
+        "L1" : {
+            "Setup coding environment": {
+            },
+            "Numbers and math": {
+            },
+            "Advanced math": {
+            },
+            "Strings": {
+            },
+            "Input and output": {
+            },
+            "Coding conventions": {
+            },
+            "Intro to Arrays": {
+            },
+            "Exercises": {
+            }
+        },
+        "L2" : {
+            "Booleans": {
+            },
+            "Logic operators": {
+            },
+            "If statements": {
+            },
+            "Advanced if statements": {
+            },
+            "While loops": {
+            },
+            "For loops": {
+            },
+            "Exceptions": {
+            },
+            "Exercises": {
+            }
+        },
+        "L3" : {
+            "Functions": {
+            },
+            "Overloading functions": {
+            },
+            "Classes": {
+            },
+            "Encapsulation": {
+            },
+            "Instance functions": {
+            },
+            "Multi dimensional arrays": {
+            },
+            "Built in classes": {
+            },
+            "Exercises": {
+            }
+        },
+        "L4" : {
+            "Inheritance": {
+            },
+            "Abstraction": {
+            },
+            "Interfaces": {
+            },
+            "Importing self written files": {
+            },
+            "Modifiers": {
+            },
+            "Arraylists": {
+            },
+            "List interface": {
+            },
+            "Exercises": {
+            }
+        },
+        "L5" : {
+            "Recursive functions": {
+            },
+            "Recursion exercises": {
+            },
+            "Binary search and big O notation": {
+            },
+            "Selection sort and Insertion sort": {
+            },
+            "Merge sort and Quick sort": {
+            },
+            "Creating and reading files": {
+            },
+            "Graph theory": {
+            },
+            "Exercises and some software development methodology": {
+            }
+        }
+    },
+    "A4" : {
+        "L1" : {
+            "Setup coding environment": {
+            },
+            "Numbers and math": {
+            },
+            "Advanced math": {
+            },
+            "Strings": {
+            },
+            "Input and output": {
+            },
+            "Lists": {
+            },
+            "Coding conventions": {
+            },
+            "Exercises": {
+            }
+        },
+        "L2" : {
+            "If statements": {
+            },
+            "If statements pt 2: electric boogaloo": {
+            },
+            "While Loops": {
+            },
+            "For Loops": {
+            },
+            "String Formatting and Exercises": {
+            },
+            "Multi Dimensional Lists": {
+            },
+            "Exceptions": {
+            },
+            "Exercises": {
+            }
+        },
+        "L3" : {
+            "Functions": {
+            },
+            "More About Functions": {
+            },
+            "Dictionaries, Sets, Tuples": {
+            },
+            "Writing/Reading from file": {
+            },
+            "Classes": {
+            },
+            "Instance Functions": {
+            },
+            "Importing/PIP": {
+            },
+            "Exercises": {
+            }
+        }
+    },
+    "A3" : {
+        "L1" : {
+            "Brief Introduction": {
+            },
+            "Building Unique 3D Objects": {
+            },
+            "Terrain and sculpting": {
+            },
+            "Score Bar creation":{
+            },
+            "Displaying information on surfaces": {
+            },
+            "Lighting | Sounds": {
+            },
+            "Spawns | Checkpoints ": {
+            },
+            "Brief Intro to Lua1 ": {
+            },
+            "Brief Intro to Lua2 ": {
+            },
+            "Physics and Constraints":{       
+            },
+            "Event": {
+            },
+            "Trampoline": {
+            }
+
+        },
+        "L2" : {
+            " Lua Scripting1: Part that disappears/reappears": {
+            },
+            " Lua Scripting 2: Deadly Part": {
+            },
+            "Lua Scripting 3: Brighten/Unbrighten buttons ": {
+            },
+            "Lua Scripting 4: Fading Part": {
+            },
+            "Click Detector ": {
+            },
+            "Teleporter": {
+            },
+            "Tweening": {
+            },
+            "Trails": {
+            },
+            "Health Pickup 1": {
+            },
+            "Health Pickup 2": {
+            },
+            "Player Tools": {
+            },
+            "Raining Parts ":{
+            }
+            
+        },
+        "L3" : {
+            "Maze Combat": {
+            },
+            "Obby Competition":{
+            },
+            "Obstacle Survival ": {
+            },
+            "Gold Collector":{
+            },
+            "Survival Game": {
+            },
+            "Free for All":{
+            }
+        }
+    },
+    "A2" : {
+        "TrialClass":{
+            "No Experience":{},
+            "Experience":{}
+        },
+        "L1" : {
+            "Move and Bounce": {
+            },
+            "Magnetic Cursor": {
+            },
+            "Rainbow Cat": {
+            },
+            "Scoring Soccer Ball": {
+            },
+            "Crossy Road": {
+            },
+            "ListsAlerted Owl": {
+            },
+            "Cats Race": {
+            },
+            "Birthday Card": {
+            }
+        },
+        "L2" : {
+            "Relay Race": {
+            },
+            "Guessing the Number": {
+            },
+            "Stop the Timer": {
+            },
+            "Music Band": {
+            },
+            "Friends Hangout": {
+            },
+            "Obstacle Course": {
+            },
+            "Hacking Screensaver": {
+            },
+            "Random Background Drawing": {
+            }
+        },
+        "L3" : {
+            "Cookie Clicker": {
+            },
+            "Dice Rolling": {
+            },
+            "Fruit Ninja VR": {
+            },
+            "Simple Calculator":{
+            },
+            "Skiing": {
+            },
+            "Soccer Ball Kick": {
+            },
+            "Divisible By 6": {
+            },
+            "Doodle Jump": {
+            }
+        }
+    }
+}

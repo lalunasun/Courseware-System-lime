@@ -1,0 +1,220 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+        /* 页面加载前隐藏相关元素 */
+        #header,
+        #level1pic,
+        #level2pic,
+        #level3pic,
+        #level4pic,
+        #level5pic,
+        #level6pic,
+        #level7pic,
+        #level8pic {
+          visibility: hidden;
+        }
+
+        /* Trial Class 链接样式 */
+        #trial-class-link {
+          text-align: center;
+          margin-top: 10px;
+          display: none; /* Initially hidden */
+        }
+
+        #trial-class-link a {
+          color: white;
+          font-size: 18px;
+        }
+        .trial-btn {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #f6d85e; 
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          border-radius: 10px; 
+          border: none;
+          }
+
+        .trial-btn:hover {
+            background-color: #f6e49b;
+        }
+      </style>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const Http = new XMLHttpRequest();
+          Http.open("GET", "/getpageinfo" + window.location.pathname);
+          Http.send();
+
+          Http.onreadystatechange = (e) => {
+            if (Http.readyState == 4 && Http.status == 200) {
+              var res = JSON.parse(Http.responseText);
+              var pathname = window.location.pathname;
+              var paths = pathname.split("/");
+              var iconPath = "/" + paths[2] + "header.png";
+            
+              if (iconPath === "/A2header.png") {
+                var headerLinkElement = document.createElement("a");
+                headerLinkElement.href = "https://scratch.mit.edu/";
+                headerLinkElement.innerHTML = `<img id="header" src="${iconPath}" height="100" style="visibility: hidden;">`;
+                document.getElementById("header").parentNode.replaceChild(headerLinkElement, document.getElementById("header"));
+
+                var headerElement = headerLinkElement.querySelector("img");
+                headerElement.onload = function () {
+                  this.style.visibility = "visible";
+                  // Trial Class link
+                  document.getElementById("trial-class-link").style.display = "block";
+                };
+              } else if (iconPath === "/A7header.png") {
+                // A7header.png link
+                var headerLinkElement = document.createElement("a");
+                headerLinkElement.href = "https://spike.legoeducation.com/";
+                headerLinkElement.innerHTML = `<img id="header" src="${iconPath}" height="100" style="visibility: hidden;">`;
+                document.getElementById("header").parentNode.replaceChild(headerLinkElement, document.getElementById("header"));
+
+                var headerElement = headerLinkElement.querySelector("img");
+                headerElement.onload = function () {
+                  this.style.visibility = "visible";
+                };
+              } else {
+                // just picture no link
+                var headerElement = document.getElementById("header");
+                headerElement.onload = function () {
+                  this.style.visibility = "visible";
+                };
+                headerElement.src = iconPath;
+              }
+
+              //others
+              for (var i = 0; i < res.length; i++) {
+                //document.getElementById(`level${i + 1}`).href = `${pathname}/${res[i]}`;
+                
+                //check if /algorithm/A2/TrialClass
+                if (res[i] === 'TrialClass') {
+                  //  TrialClass
+                  console.log('Encountered TrialClass, stopping level generation');
+                  break;
+                }
+
+                document.getElementById(`level${i + 1}`).href = `${pathname}/${res[i]}`;
+                var levelPicElement = document.getElementById(`level${i + 1}pic`);
+                levelPicElement.src = `/picture/level${i + 1}.png`;
+
+                levelPicElement.onload = function () {
+                  this.style.visibility = "visible";
+                };
+              }
+            }
+          };
+        });
+      </script>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>CSAA</title>
+      <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+      <p style="text-align: center;">
+        <img src="/picture/CSAA LOGO.jpg" height="100">
+      </p>
+
+      <!--Coding Navbar-->
+      <div id="coding-navbar" style="display: none;">
+        <table>
+          <tbody>
+            <tr>
+              <td style="background-color: rgb(240, 212, 54, 0.7);"><a id="algorithm" href="/">HOME</a></td>
+              <td style="background-color: rgb(240, 212, 54, 0.7);"><a id="algorithm" href="/algorithm/A2">SCRATCH</a></td>
+              <td style="background-color: rgb(240, 212, 54, 0.7);"><a id="algorithm" href="/algorithm/A3">ROBLOX</a></td>
+              <td style="background-color: rgb(240, 212, 54, 0.7);"><a id="algorithm" href="/algorithm/A4">PYTHON</a></td>
+              <td style="background-color: rgb(240, 212, 54, 0.7);"><a id="algorithm" href="/algorithm/A5">JAVA</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <br>
+
+      <!--Robotics Navbar-->
+      <div id="robotics-navbar" style="display: none;">
+        <table>
+          <tbody>
+            <tr>
+              <td style="background-color: rgb(235, 57, 57, 0.7);"><a id="robotics" href="/">HOME</a></td>
+              <td style="background-color: rgb(235, 57, 57, 0.7);"><a id="robotics" href="/robotics/A6">WEDO 2.0</a></td>
+              <td style="background-color: rgb(235, 57, 57, 0.7);"><a id="robotics" href="/robotics/A7">SPIKE PRIME</a></td>
+              <td style="background-color: rgb(235, 57, 57, 0.7);"><a id="robotics" href="/robotics/A8">VEX IQ</a></td>
+              <td style="background-color: rgb(235, 57, 57, 0.7);"><a id="robotics" href="/robotics/A9">VEX EDR</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--Science Navbar-->
+      <div id="Science-navbar" style="display: none;">
+        <table>
+          <tbody>
+            <tr>
+                <td style="background-color: rgba(33, 240, 240, 0.7);"><a id="science" href="/">HOME</a></td>
+                <td style="background-color: rgb(33, 240, 240, 0.7);"><a id="science" href="/science/A10">Sceince 5-13 Years</a></td>
+        
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+      <p style="text-align: center;">
+        <img id="header" src="" height="100">
+      </p>
+
+      <!-- Trial Class 链接，当 A2header.png 加载时显示 -->
+      <p id="trial-class-link">
+        <a href="/algorithm/A2/TrialClass" class="trial-btn">Trial Class</a>
+      </p>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const pathname = window.location.pathname;
+
+          if (pathname.includes("/robotics/")) {
+            document.getElementById("robotics-navbar").style.display = "block";
+          } else if (pathname.includes("/algorithm/") || pathname.includes("/coding/")) {
+            document.getElementById("coding-navbar").style.display = "block";
+          }
+          else if (pathname.includes("/science/") || pathname.includes("/science/")) {
+            document.getElementById("Science-navbar").style.display = "block";
+          }
+        });
+      </script>
+
+      <p style="text-align: center;">
+        <img id="header" src="" height="100">
+      </p>
+      <br><br><br>
+
+      <div class="pic" id="levels">
+        <a class="pic" id="level1" href="">
+          <img id="level1pic" src="" width="170" height="170">
+        </a>
+        <a class="pic" id="level2" href="">
+          <img id="level2pic" src="" width="170" height="170">
+        </a>
+        <a class="pic" id="level3" href="">
+          <img id="level3pic" src="" width="170" height="170">
+        </a>
+        <br>
+        <a class="pic" id="level4" href="">
+          <img id="level4pic" src="" width="170" height="170">
+        </a>
+        <a class="pic" id="level5" href="">
+          <img id="level5pic" src="" width="170" height="170">
+        </a>
+        <a class="pic" id="level6" href="">
+          <img id="level6pic" src="" width="170" height="170">
+        </a>
+        <br>
+        <a class="pic" id="level7" href="">
+          <img id="level7pic" src="" width="170" height="170">
+        </a>
+       
